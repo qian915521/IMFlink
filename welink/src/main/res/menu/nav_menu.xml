@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/nav_item1">
+    <item
+        android:id="@+id/nav_mainpage"
+        android:icon="@drawable/mypage_icon"
+        android:title="      我  的  主  页"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/nav_item2">
+    <item
+        android:id="@+id/nav_explore"
+        android:icon="@drawable/myexplore_icon"
+        android:title="      我  的  发  现"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/nav_item3">
+    <item
+        android:id="@+id/nav_pay"
+        android:icon="@drawable/wallet_iocn"
+        android:title="      闪  付  钱  包"/>
+     </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/nav_item4">
+    <item
+        android:id="@+id/nav_cloud"
+        android:icon="@drawable/cloudfile_icon"
+        android:title="      文  件  之  家"/>
+    </group>
+
+    <item android:title="关于应用">
+        <menu>
+            <item
+                android:id="@+id/menu_setting"
+                android:checkable="true"
+                android:icon="@drawable/setting_icon"
+                android:title="      设  置  中  心"/>
+            <item
+                android:id="@+id/menu_exit"
+                android:checkable="true"
+                android:icon="@drawable/logout_icon"
+                android:title="      退  出  账  号"/>
+        </menu>
+    </item>
+
+
+
+
+</menu>
+
+    <!--主页面右划栏的菜单选项 -->
+    <!--主页面右划栏的菜单选项-->
+    <!--主页面右划栏的菜单选项-->

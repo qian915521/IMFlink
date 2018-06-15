@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/chat_user_image"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center_vertical"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <RelativeLayout
+                android:background="@drawable/chatmessageleft"
+                android:layout_width="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/chat_user_text"
+                    android:textSize="20dp"
+                    android:text="我很好"
+                    android:layout_gravity="center_vertical"
+                    android:maxWidth="250dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#88c057"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.welink.BoomMenueItem.SchoolLife">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:contentInsetStart="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_icon"
+                android:layout_width="40dp"
+                android:id="@+id/back"
+                android:layout_height="40dp" />
+            <TextView
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:text="校园生活"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="#eeaf4b"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_gravity="center"
+                    android:background="@drawable/school_page"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:textColor="#ffffff"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:text="课堂内外"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_gravity="center"
+                    android:background="@drawable/school_money_icon"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp" />
+                <TextView
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:text="生活服务"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="#48a0dc"
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:layout_gravity="center"
+                        android:background="@drawable/school_readio_icon"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp" />
+                    <TextView
+                        android:textColor="#ffffff"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:text="广播通知"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="#ed7161"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:layout_gravity="center"
+                        android:background="@drawable/school_plane_icon"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+                    <TextView
+                        android:textColor="#ffffff"
+                        android:textSize="25sp"
+                        android:textAlignment="center"
+                        android:text="纸飞机"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/search_newfriend_input"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@drawable/register_edit_bg"
+            android:layout_weight="4"
+            android:hint="搜索校园生活服务"
+            android:textColorHint="@color/hint"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:background="@drawable/login_btn_selector"
+            android:text="搜索"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>

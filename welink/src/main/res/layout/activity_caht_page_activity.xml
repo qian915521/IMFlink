@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:StackFromBottom="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:contentInsetStart="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3385ff"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_icon"
+                android:layout_width="40dp"
+                android:id="@+id/back"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/toolbar_text"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:text="聊天页面"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <ListView
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"
+            android:scrollingCache="false"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/chat_list_view"
+            android:divider="@null"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#3385ff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/message_text"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:inputType="textMultiLine"
+            android:textSize="24sp" />
+        <ImageButton
+            android:background="@drawable/school_plane_icon"
+            android:text="发 送"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:id="@+id/send_message_button"/>
+    </LinearLayout>
+</LinearLayout>

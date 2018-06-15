@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.welink">
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="singleInstance"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionBar">
+        <activity android:name=".Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/noStatue" />
+        <activity android:name=".Linkman" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".SearchAddFriend" />
+        <activity android:name=".WriteExplore" />
+        <activity
+            android:name=".BoomMenueItem.SchoolLife"
+            android:theme="@style/noStatue" />
+        <activity android:name=".BoomMenueItem.TravelworldActivity" />
+        <activity
+            android:name=".BoomMenueItem.MusicbarActivity"
+            android:theme="@style/noStatue" />
+        <activity android:name=".BoomMenueItem.WenkuActivity" />
+        <activity android:name=".BoomMenueItem.ExerciseActivity" />
+        <activity android:name=".BoomMenueItem.GameActivity" />
+        <activity
+            android:name=".BoomMenueItem.TaogeqiuActivity"
+            android:theme="@style/noStatue" />
+        <activity android:name=".BoomMenueItem.MoreActivity" />
+        <activity
+            android:name=".nav_menu_item.MypageActivity"
+            android:theme="@style/noStatue" />
+        <activity android:name=".nav_menu_item.MyexploreActivity" />
+        <activity android:name=".nav_menu_item.PayActivity" />
+        <activity android:name=".nav_menu_item.WenjianActivity" />
+        <activity android:name=".nav_menu_item.SettingActivity" />
+        <activity android:name=".BoomMenueItem.PiaoActivity" />
+        <activity android:name=".Caht_page_activity" />
+
+        <service
+            android:name=".MainService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

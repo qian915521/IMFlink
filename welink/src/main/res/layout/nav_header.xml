@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="217dp"
+    android:background="@drawable/head_nav_bg"
+    android:theme="@style/noStatue">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+       <com.example.welink.view.CircleImageView
+           android:id="@+id/userImage"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:src="@drawable/test_icon"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"/>
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:text="@string/user_name"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
+
+    <!--主页面右划头布局文件 -->
+    <!--主页面右划头布局文件 -->
+    <!--主页面右划头布局文件 -->
